@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Dashboard</h2>
+
+@using (Html.BeginForm("Dashboard", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+
+{
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Dashboard</title>
+
+        <!-- Bootstrap core CSS -->
+        @*<link href="~/Content/bootstrap.min.css" rel="stylesheet">*@
+
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-6 col-md-3 mr-0" href="#">Online Bank</a>
+            @*<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">*@
+        <ul class="nav nav-pills ">
+            <li role="presentation" class="active"><a href="#">Account Statement</a></li>
+            <li role="presentation"><a href="#">Fund Transfer</a></li>
+            <li role="presentation"><a href="#">User Profile</a></li>
+            <li role="presentation"><a href="#">Channge UserID Password</a></li>
+        </ul>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <span data-feather="home"></span>
+                                    Account Details <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file"></span>
+                                    Account Summary
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="shopping-cart"></span>
+                                    Funds Transfer
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="users"></span>
+                                    Account Statement
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                @*<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                </main>*@
+            </div>
+        </div>
+
+
+
+        @* <script >
+
+            </script>*@
+    </body>
+</html>
+}
